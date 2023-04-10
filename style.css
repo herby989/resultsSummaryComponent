@@ -1,0 +1,226 @@
+    @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700;800&display=swap');
+
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Hanken Grotesk";
+    }
+
+
+    #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    #box {
+        display: flex;
+        width: 600px;
+        height: 400px;
+        border-radius: 5%;
+        background-color: hsl(0, 0%, 100%);
+        box-shadow: hsl(241, 100%, 89%) 3px 10px 20px;
+    }
+
+    #leftSide {
+        width: 50%;
+        border-radius: 6% 6% 6% 6%;
+        background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+        text-align: center;
+        color: white;
+    }
+
+    .resultArea {
+        width: 150px;
+        height: 150px;
+        margin: 30px auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0) 100%);
+    }
+
+    .yourResult {
+        color: hsl(241, 100%, 89%);
+        margin-top: 30px;
+        font-size: 1.2rem;
+    }
+
+    .result {
+        color: white;
+        font-size: 3.5rem;
+        font-weight: 800;
+    }
+
+    .max {
+        color: hsl(241, 100%, 89%);
+    }
+
+    .mention {
+        margin: 0 auto;
+        width: 70%;
+    }
+
+    .mention span {
+        font-size: 1.5rem;
+        font-weight: 500;
+
+    }
+
+    .mention p {
+        margin-top: 10px;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        font-weight: 400;
+        color: hsl(241, 100%, 89%);
+
+    }
+
+
+    #rightSide {
+        width: 50%;
+        padding: 30px;
+    }
+
+    #summary {
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+    }
+
+    .rows {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin: 12px 0;
+        border-radius: 5px;
+        font-weight: 500;
+    }
+
+    .subjects {
+        display: flex;
+        align-items: center;
+    }
+
+
+    img {
+        margin-right: 10px;
+    }
+
+    .reaction {
+        color: hsl(0, 100%, 67%);
+        background-color: hsl(0, 100%, 96%);
+    }
+
+    .memory {
+        color: hsl(39, 100%, 56%);
+        background-color: hsl(39, 100%, 96%);
+    }
+
+    .verbal {
+        color: hsl(166, 100%, 37%);
+        background-color: hsl(166, 100%, 96%);
+    }
+
+    .visual {
+        color: hsl(234, 85%, 45%);
+        background-color: hsl(234, 100%, 96%);
+    }
+
+
+    .score {
+        color: hsl(224, 30%, 27%);
+        font-weight: 800;
+    }
+
+    .maxP {
+        color: hsl(224, 30%, 75%);
+        font-weight: 600;
+    }
+
+    .btn {
+        text-align: center;
+        margin: 40px 0px;
+    }
+
+    button {
+        text-align: center;
+        padding: 12px;
+        width: 100%;
+        border-radius: 25px;
+        border: none;
+        background-color: hsl(224, 30%, 27%);
+        color: hsl(0, 0%, 100%);
+
+    }
+
+    button:hover {
+        background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 600px) {
+        #container {
+            margin: 0;
+            padding: 0;
+            min-height: auto;
+        }
+
+        #box {
+            width: auto;
+            height: auto;
+            margin: 0 auto;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 0px;
+            box-shadow: none;
+
+        }
+
+        #leftSide {
+            width: 100%;
+            height: auto;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 0px;
+            background: linear-gradient(0deg, hsl(241, 81%, 54%) 0%, hsl(252, 100%, 67%) 100%);
+            text-align: center;
+            color: white;
+            padding-bottom: 50px;
+            border-radius: 0px 0px 50px 50px;
+        }
+
+        .mention p {
+            font-size: 16px;
+        }
+
+        #rightSide {
+            flex-direction: column;
+            width: 100%;
+            padding: 30px;
+            height: auto;
+        }
+
+        .rows {
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        button {
+            padding: 20px;
+            border-radius: 50px;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    }
